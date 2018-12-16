@@ -1,0 +1,72 @@
+<!-- ---------------------------------------------------------------------
+// <copyright file="configuration.html">
+//    This code is licensed under the MIT License.
+//    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+//    ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+//    TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+//    PARTICULAR PURPOSE AND NONINFRINGEMENT.
+// </copyright>
+// <summary>
+// configuration
+// </summary>
+//---------------------------------------------------------------------
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link href="css/app.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="widget-configuration">
+
+        <div class="single-line-text-input" id="linewi">
+            <label>Parent Work item Id</label>
+            <input type="text" id="wiid" required>
+            <span class="validation-error">
+                <span class="icon-error-exclamation"></span>
+            <span class="validation-error-text"></span>
+            </span>
+        </div>
+        <div id="switch-expandtree" style="margin-top:15px;display:line">
+            <div>
+                <div style="font-size:14px;float:left;color:#767676">Expand tree*</div>
+                <div style="float:right;margin-left:10px" id="expandtree-status"></div>
+                <label class="switch" style="float:right">
+                    <input type="checkbox" id="expand-tree">
+                    <div class="slider round"></div>
+                </label>
+                 
+            </div>
+            <div style="clear:left;font-size:13px;padding-top:5px">Expand the tree of the hierarchy</div>
+        </div>
+        <div id="switch-firstasheader" style="margin-top:15px;display:line">
+            <div>
+                <div style="font-size:14px;float:left;color:#767676">Parent as widget header</div>
+                <div style="float:right;margin-left:10px" id="firstasheader-status"></div>
+                <label class="switch" style="float:right">
+                    <input type="checkbox" id="firstasheader">
+                    <div class="slider round"></div>
+                </label>
+                 
+            </div>
+            <div style="clear:left;font-size:13px;padding-top:5px">The Parent Work Item is placed as header of the widget</div>
+        </div>
+    </div>
+    <script src="../lib/VSS.SDK.js"></script>
+    <script type="text/javascript">
+        VSS.init({
+            explicitNotifyLoaded: true,
+            usePlatformStyles: true,
+            usePlatformScripts: true,
+            setupModuleLoader: true
+        });
+
+        VSS.ready(function () {
+            require(["dist/configuration"], function (configuration) { });
+        });
+    </script>
+</body>
+
+</html>

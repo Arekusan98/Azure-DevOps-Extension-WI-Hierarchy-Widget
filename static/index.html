@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery.treetable.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery.treetable.theme.default.css" type="text/css" />
+</head>
+
+<body>
+    <div class="widget">
+        <!--<span class="wit-widget-view-title" style="display: block;">Hierarchy</span> -->
+        <h2>Titre du widget</h2>
+        <div class="content" style="margin-top:10px;">
+            <table id="witable">
+                <thead>
+                    <tr>
+                        <th style="width:10px">Id</th>
+                        <th style="width:300px">Name</th>
+                        <th>State</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="defaultcontent" style="display: block;" id="configwidget">
+            <div class="widget-message-text">Configure widget</div>
+            <div class="bgImage"></div>
+            <span class="link-text"></span>
+        </div>
+    </div>
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/VSS.SDK.min.js"></script>
+    <script src="../lib/jquery.treetable.js"></script>
+    <script type="text/javascript">
+        // Initialize the VSS sdk
+        VSS.init({
+            explicitNotifyLoaded: true,
+            setupModuleLoader: true,
+            usePlatformScripts: true,
+            usePlatformStyles: true
+        });
+
+        // Wait for the SDK to be initialized
+        VSS.ready(function () {
+            VSS.require(["dist/main"], function (app) {
+            });
+        });
+    </script>
+</body>
+
+</html>
