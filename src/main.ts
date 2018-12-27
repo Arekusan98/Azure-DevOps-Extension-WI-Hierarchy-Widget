@@ -88,11 +88,12 @@ export class BacklogItemHierarchyWidget {
   private WriteHtmlTable(result: any, customSettings) {
     result.forEach((element) => {
       let statecolumn = this.getColorState(element.state) + " " + element.state;
+      let isHeader = customSettings.parentwiasheader && element.parentid === 0;
       // infos du wi type
       let type = this.wiTypes.filter(x => x.name === element.witype);
       let imagetype = "<img src=" + type[0].icon.url + " class=\"imgwitype\" />";
-      let namecolumn = imagetype + " " + this.getName(element.name, element.id);
-      if (customSettings.parentwiasheader && element.parentid === 0) {
+      let namecolumn = imagetype + " " + this.getName(element.name, element.id, !isHeader);
+      if (isHeader) {
         this.$title.html(namecolumn);
       } else {
         this.appendTableColumn(this.Tablecontainer, [element.id, namecolumn, statecolumn], element.id, element.parentid);
@@ -123,7 +124,10 @@ export class BacklogItemHierarchyWidget {
     return "<span class=\"workitem-state-circle\" style=\"padding:0;border-color:" + statecolor + ";background-color:" + backgroundcolor + "\"></span>";
   }
 
-  private getName(name, id) {
+  private getName(name, id, disabled = false) {
+    if (disabled) {
+      return "<div id=\"linkwidisabled\" >" + name + "</div>";
+    }
     return "<div id=\"linkwi\" dataid=" + id + ">" + name + "</div>";
   }
 

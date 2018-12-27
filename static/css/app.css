@@ -33,9 +33,15 @@ span {
 
 #linkwi {
     cursor: pointer;
-    /*padding-left:3px;
-    padding-top: 3px;
-    height: 21px;*/
+    font-style: normal;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#linkwidisabled {
+
     font-style: normal;
     display: inline-block;
     white-space: nowrap;
