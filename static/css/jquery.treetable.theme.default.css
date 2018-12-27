@@ -14,6 +14,11 @@ table.treetable {
     font-size: .9em;
   }
   */
+
+  table.treetable thead {
+    border-bottom: #EAEAEA 1px solid;
+  }
+  
  table.treetable thead tr th {
     font-weight: normal;
     padding: .3em 1em .1em 1em;
