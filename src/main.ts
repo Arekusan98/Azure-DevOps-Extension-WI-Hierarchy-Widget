@@ -91,8 +91,8 @@ export class BacklogItemHierarchyWidget {
       let isHeader = customSettings.parentwiasheader && element.parentid === 0;
       // infos du wi type
       let type = this.wiTypes.filter(x => x.name === element.witype);
-      let imagetype = "<img src=" + type[0].icon.url + " class=\"imgwitype\" />";
-      let namecolumn = imagetype + " " + this.getName(element.name, element.id, !isHeader);
+      let imagetype = `<img src="${type[0].icon.url}" class=\"imgwitype\" />`;
+      let namecolumn = imagetype + " " + this.getWorkItemHtml(element.name, element.id, isHeader);
       if (isHeader) {
         this.$title.html(namecolumn);
       } else {
@@ -124,11 +124,11 @@ export class BacklogItemHierarchyWidget {
     return "<span class=\"workitem-state-circle\" style=\"padding:0;border-color:" + statecolor + ";background-color:" + backgroundcolor + "\"></span>";
   }
 
-  private getName(name, id, disabled = false) {
-    if (disabled) {
-      return "<div id=\"linkwidisabled\" >" + name + "</div>";
+  private getWorkItemHtml(name, id, isHeader) {
+    if (isHeader) {
+      return `<div id="wiheader" >${name}</div>`;
     }
-    return "<div id=\"linkwi\" dataid=" + id + ">" + name + "</div>";
+    return `<div id=\"linkwi\" dataid="${id}">${name}</div>`;
   }
 
   // renvoie la hierarchy en tableau
