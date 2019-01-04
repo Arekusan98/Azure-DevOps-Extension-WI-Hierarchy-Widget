@@ -22,7 +22,7 @@
     <div class="widget-configuration">
 
         <div class="single-line-text-input" id="linewi">
-            <label>Parent Work item Id</label>
+            <label>Root Work item Id</label>
             <input type="text" id="wiid" required>
             <span class="validation-error">
                 <span class="icon-error-exclamation"></span>
@@ -37,13 +37,12 @@
                     <input type="checkbox" id="expand-tree">
                     <div class="slider round"></div>
                 </label>
-                 
             </div>
             <div style="clear:left;font-size:13px;padding-top:5px">Expand the tree of the hierarchy</div>
         </div>
         <div id="switch-firstasheader" style="margin-top:15px;display:line">
             <div>
-                <div style="font-size:14px;float:left;color:#767676">Parent as widget header</div>
+                <div style="font-size:14px;float:left;color:#767676">Root work item as title</div>
                 <div style="float:right;margin-left:10px" id="firstasheader-status"></div>
                 <label class="switch" style="float:right">
                     <input type="checkbox" id="firstasheader">
@@ -51,7 +50,7 @@
                 </label>
                  
             </div>
-            <div style="clear:left;font-size:13px;padding-top:5px">The Parent Work Item is placed as header of the widget</div>
+            <div style="clear:left;font-size:13px;padding-top:5px">The hierarchy only contains the childs of the root workitem</div>
         </div>
     </div>
     <script src="../lib/VSS.SDK.js"></script>
