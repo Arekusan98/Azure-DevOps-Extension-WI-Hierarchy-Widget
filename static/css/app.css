@@ -31,6 +31,11 @@ span {
   margin-bottom: 1px;
 }
 
+.imgwitype-header{
+  height: 12px;
+  margin-bottom: 4px;
+}
+
 #linkwi {
     cursor: pointer;
     font-style: normal;
