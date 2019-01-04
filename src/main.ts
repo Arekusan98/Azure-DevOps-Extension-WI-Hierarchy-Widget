@@ -141,7 +141,7 @@ export class BacklogItemHierarchyWidget {
            if (isHeader) {
              return `<div id="wiheader" >${name}</div>`;
            }
-           return `<div id=\"linkwi\" dataid="${id}">${name}</div>`;
+           return `<a id=\"linkwi\" title="${name}" dataid="${id}">${name}</div>`;
          }
 
          // renvoie la hierarchy en tableau
