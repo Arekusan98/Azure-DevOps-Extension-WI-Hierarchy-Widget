@@ -321,6 +321,7 @@ export class BacklogItemHierarchyWidget {
       case "Open":
       case "Ready":
       case "Active":
+      case "Resolved":
       case "In Planning":
         statecolor = "#007acc";
         break;
