@@ -34,7 +34,7 @@ export class BacklogItemHierarchyWidget {
   private Tablecontainer = $("#witable");
   private $title = $("h2");
 
-  private RenderWidget(widgetSettings, isReload: boolean) {
+  private RenderWidget(widgetSettings: any, isReload: boolean) {
     $("#witable").hide();
     let customSettings = JSON.parse(
       widgetSettings.customSettings.data
@@ -56,7 +56,7 @@ export class BacklogItemHierarchyWidget {
             // Affiche le resultat dans le table
             $("#witable tbody").empty();
             this.WriteTableBody(result, customSettings);
-            this.LoadTreeTableJquery(isReload, customSettings);
+            this.LoadTreeTableJquery(widgetSettings, isReload, customSettings);
 
             $("#witable").show();
             $("#content").show();
@@ -70,7 +70,8 @@ export class BacklogItemHierarchyWidget {
     return this.WidgetHelpers.WidgetStatusHelper.Success();
   }
 
-  private LoadTreeTableJquery(isReload: boolean, customSettings: ISettings) {
+  private LoadTreeTableJquery(widgetSettings: any, isReload: boolean, customSettings: ISettings) {
+    let that = this;
     $("#witable").treetable(
       {
         expandable: isReload ? false : customSettings.expandtree,
@@ -100,7 +101,7 @@ export class BacklogItemHierarchyWidget {
                   .openWorkItem(Number(current.attr("data-tt-id")), false)
                   .then(wi => {
                     if (wi) {
-                      this.LoadTreeTableJquery(customSettings, true);
+                      that.reload(widgetSettings);
                     }
                   });
               }
