@@ -1,8 +1,8 @@
 {
   "scripts": {
     "build": "npm run lint && npm run clean && npm run webpack",
+    "build:pr": "npm run lint && npm run clean && npm run webpack && npm run package",
     "webpack": "webpack --progress --colors --config webpack.config.js --output-path ./dist -p",
-    "postbuild": "npm run package",
     "package": "tfx extension create  --rev-version",
     "gallery-publish": "tfx extension publish --rev-version --no-wait-validation",
     "clean": "rimraf ./dist && rimraf ./*.vsix",
