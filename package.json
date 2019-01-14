@@ -24,7 +24,7 @@
     "@priotas/jquery-treetable": "4.0.0",
     "vss-web-extension-sdk": "^5.141.0",
     "azure-devops-extension-sdk": "^2.0.3",
-    "jquery": "2.2.0"
+    "jquery": ">=3.0.0"
   },
   "name": "vstsextwidget",
   "private": true,
