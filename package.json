@@ -2,7 +2,7 @@
   "scripts": {
     "build": "npm run lint && npm run clean && npm run webpack",
     "webpack": "webpack --progress --colors --config webpack.config.js --output-path ./dist -p",
-    "postbuild": "npm run gallery-publish",
+    "postbuild": "npm run package",
     "package": "tfx extension create  --rev-version",
     "gallery-publish": "tfx extension publish --rev-version --no-wait-validation",
     "clean": "rimraf ./dist && rimraf ./*.vsix",
