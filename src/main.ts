@@ -74,7 +74,7 @@ export class BacklogItemHierarchyWidget {
     let that = this;
     $("#witable").treetable(
       {
-        expandable: isReload ? false : customSettings.expandtree,
+        expandable: customSettings.expandtree,
         clickableNodeNames: false,
         onInitialized: function() {
           $("#witable tr").each((i, el) => {
