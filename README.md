@@ -2,12 +2,10 @@
 
 Backlog Item Hierarchy Widget
 
+![](/static/images/Screen1.png)
+
 ### Master branch status
 [![Build status](https://dev.azure.com/cellenza/AzureDevOpsExtensions/_apis/build/status/WI-Hierarchy-Widget)](https://dev.azure.com/cellenza/AzureDevOpsExtensions/_build/latest?definitionId=121)
-
-### Quick steps to get started ###
-
-![](/static/images/Screen1.png)
 
 ### Known issue(s)
 
@@ -23,7 +21,5 @@ The [source](https://github.com/Cellenza/Azure-DevOps-Extension-WI-Hierarchy-Wid
 
 ### Contributors ###
 
-We thank the following contributor(s) for this extension: Mikael Krief
+We thank the following contributor(s) for this extension: [Mikael Krief](https://github.com/mikaelkrief), [Michel Perfetti](https://github.com/miiitch)
 
-### Feedback ###
-- Add a review below.

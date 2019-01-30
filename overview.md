@@ -13,8 +13,7 @@ Backlog Item Hierarchy Widget
 
 ### Learn More
 
-The [source](//TODO:Point to your repo or remove this) to this extension is available. Feel free to take, fork, and extend.
-
+The [source](https://github.com/Cellenza/Azure-DevOps-Extension-WI-Hierarchy-Widget) to this extension is available. Feel free to take, fork, and extend.
 
 
 ### Minimum supported environments ###
@@ -23,7 +22,4 @@ The [source](//TODO:Point to your repo or remove this) to this extension is avai
 
 ### Contributors ###
 
-We thank the following contributor(s) for this extension: Mikael Krief
-
-### Feedback ###
-- Add a review below.
+We thank the following contributor(s) for this extension: [Mikael Krief](https://github.com/mikaelkrief), [Michel Perfetti](https://github.com/miiitch)
