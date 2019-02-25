@@ -85,9 +85,9 @@ export class BacklogItemHierarchyWidget {
             let nameWidth =
               250 -
               (12 +
-                $(el)
+                parseInt($(el)
                   .find("td:nth-child(2) .indenter")
-                  .outerWidth() +
+                .css("padding-left")) +
                 spaceExpand);
             $(el)
               .find("td:nth-child(2) #linkwi")
