@@ -1,6 +1,6 @@
 ## Azure DevOps Extension Backlog Hierarchy Widget ##
 
-Backlog Item Hierarchy Widget
+The **Backlog Item Hierarchy Widget** display an childs hierarchical view of any given Work item.
 
 ![](/static/images/Screen1.png)
 
