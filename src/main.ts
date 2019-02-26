@@ -78,9 +78,9 @@ export class BacklogItemHierarchyWidget {
         clickableNodeNames: false,
         onInitialized: function() {
           $("#witable tr").each((i, el) => {
-            let spaceExpand = 0;
+            let spaceExpand = 20;
             if (customSettings.expandtree) {
-              spaceExpand = 20;
+              spaceExpand = 40;
             }
             let nameWidth =
               250 -
