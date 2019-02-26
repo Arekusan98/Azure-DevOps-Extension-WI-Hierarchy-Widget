@@ -9,7 +9,7 @@ The **Backlog Item Hierarchy Widget** display an childs hierarchical view of any
 
 ### Known issue(s)
 
-- None
+- You can't open or close a node in configuration mode.
 
 ### Learn More
 
