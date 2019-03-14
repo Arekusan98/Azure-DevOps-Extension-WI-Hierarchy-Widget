@@ -17,14 +17,14 @@
   },
   "targets": [
     {
-      "id": "Microsoft.VisualStudio.Services"
+      "id": "Microsoft.VisualStudio.Services.Cloud"
     }
   ],
   "demands": [
     "api-version/3.0"
   ],
   "tags": [
-    "Sample"
+    "Work Item","Board"
   ],
   "content": {
     "license": {
