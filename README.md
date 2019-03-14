@@ -23,4 +23,3 @@ The [source](https://github.com/Cellenza/Azure-DevOps-Extension-WI-Hierarchy-Wid
 ### Contributors ###
 
 We thank the following contributor(s) for this extension: [Mikael Krief](https://github.com/mikaelkrief), [Michel Perfetti](https://github.com/miiitch)
-

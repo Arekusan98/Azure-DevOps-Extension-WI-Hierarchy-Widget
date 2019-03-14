@@ -24,7 +24,7 @@
     "api-version/3.0"
   ],
   "tags": [
-    "Work Item","Board"
+    "Work Item","Board", "Widget"
   ],
   "content": {
     "license": {
