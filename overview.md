@@ -32,12 +32,11 @@ The widget will be directly added to your dashboard
 
 By default the backlog item hierarchy tree is fully open: all nodes are unfolded.
 
-
-
-
 ### Known issue(s)
 
-- None
+- You can't open or close a node in configuration mode.
+- Only the default theme is supported
+
 
 ### Learn More
 
