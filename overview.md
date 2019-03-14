@@ -28,15 +28,26 @@ The widget will be directly added to your dashboard
 
 ### Others Widget configuration ###
 
+![config options](/static/images/config-options.png)
+
 #### Expand Tree ####
 
 By default the backlog item hierarchy tree is fully open: all nodes are unfolded.
+Checking the option Expand Tree [1] for add the collapse/expand feature on grid.
+
+![collapse](/static/images/collapse-nodes.png)
+
+#### Root work item as title ####
+
+By default the title of the Widget is defined on the configuration panel.
+Checking the option Root Work Item as Title [2] display the name of the parent work item as title of the widget.
+
+![title](/static/images/title-wi.png)
 
 ### Known issue(s)
 
 - You can't open or close a node in configuration mode.
 - Only the default theme is supported
-
 
 ### Learn More
 
