@@ -36,13 +36,13 @@
   },
   "links": {
     "getstarted": {
-      "uri": "https://bit.ly"
+      "uri": "https://github.com/Cellenza/Azure-DevOps-Extension-WI-Hierarchy-Widget/blob/master/README.md"
     },
     "support": {
-      "uri": "https://bit.ly"
+      "uri": "https://github.com/Cellenza/Azure-DevOps-Extension-WI-Hierarchy-Widget/issues"
     },
     "issues": {
-      "uri": "https://bit.ly"
+      "uri": "https://github.com/Cellenza/Azure-DevOps-Extension-WI-Hierarchy-Widget/issues"
     }
   },
   "repository": {
