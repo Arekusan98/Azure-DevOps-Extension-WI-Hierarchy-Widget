@@ -1,6 +1,6 @@
 ## Work Item Hierarchy widget for Azure Boards##
 
-The **Work Item Hierarchy widget** display an childs hierarchical view of any given Work item.
+The **Work Item Hierarchy widget** display an childs hierarchical view of any given Work item. You can install it from [the marketplace](https://marketplace.visualstudio.com/items?itemName=cellenza.WI-Hierarchy-Widget).
 
 ![](/static/images/Screen1.png)
 
